@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c86ee1697fea0f6db3f902cca3bb5b65",
+    "content-hash": "f268b50362d752fb43bd822b682adaf2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -892,23 +892,28 @@
         },
         {
             "name": "firebase/php-jwt",
-            "version": "v5.5.1",
+            "version": "v6.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/firebase/php-jwt.git",
-                "reference": "83b609028194aa042ea33b5af2d41a7427de80e6"
+                "reference": "ddfaddcb520488b42bca3a75e17e9dd53c3667da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/83b609028194aa042ea33b5af2d41a7427de80e6",
-                "reference": "83b609028194aa042ea33b5af2d41a7427de80e6",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/ddfaddcb520488b42bca3a75e17e9dd53c3667da",
+                "reference": "ddfaddcb520488b42bca3a75e17e9dd53c3667da",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": "^7.1||^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": ">=4.8 <=9"
+                "guzzlehttp/guzzle": "^6.5||^7.4",
+                "phpspec/prophecy-phpunit": "^1.1",
+                "phpunit/phpunit": "^7.5||^9.5",
+                "psr/cache": "^1.0||^2.0",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0"
             },
             "suggest": {
                 "paragonie/sodium_compat": "Support EdDSA (Ed25519) signatures when libsodium is not present"
@@ -943,9 +948,9 @@
             ],
             "support": {
                 "issues": "https://github.com/firebase/php-jwt/issues",
-                "source": "https://github.com/firebase/php-jwt/tree/v5.5.1"
+                "source": "https://github.com/firebase/php-jwt/tree/v6.3.1"
             },
-            "time": "2021-11-08T20:18:51+00:00"
+            "time": "2022-11-01T21:20:08+00:00"
         },
         {
             "name": "fruitcake/laravel-cors",
@@ -3312,25 +3317,26 @@
         },
         {
             "name": "shopify/shopify-api",
-            "version": "v2.0.1",
+            "version": "v4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Shopify/shopify-api-php.git",
-                "reference": "0556edf274ceb83346533bd22b662d7622e58c66"
+                "reference": "906ad402c58a8cba0527d35bf6faaba421692d34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Shopify/shopify-api-php/zipball/0556edf274ceb83346533bd22b662d7622e58c66",
-                "reference": "0556edf274ceb83346533bd22b662d7622e58c66",
+                "url": "https://api.github.com/repos/Shopify/shopify-api-php/zipball/906ad402c58a8cba0527d35bf6faaba421692d34",
+                "reference": "906ad402c58a8cba0527d35bf6faaba421692d34",
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "^2.0",
-                "firebase/php-jwt": "^5.2",
+                "ext-json": "*",
+                "firebase/php-jwt": "^5.2 || ^6.2",
                 "guzzlehttp/guzzle": "^7.0",
                 "php": "^7.4 || ^8.0 || ^8.1",
                 "psr/http-client": "^1.0",
-                "psr/log": "^1.1",
+                "psr/log": "^1.1 || ^2.0 || ^3.0",
                 "ramsey/uuid": "^4.1"
             },
             "require-dev": {
@@ -3368,9 +3374,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Shopify/shopify-api-php/issues",
-                "source": "https://github.com/Shopify/shopify-api-php/tree/v2.0.1"
+                "source": "https://github.com/Shopify/shopify-api-php/tree/v4.1.1"
             },
-            "time": "2022-04-11T17:51:03+00:00"
+            "time": "2022-11-07T16:06:05+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -8268,5 +8274,5 @@
         "php": "^7.4 || ^8.0 || ^8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.3.0"
 }
